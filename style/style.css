@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+/* =================Header================ */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: whitesmoke;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo_img {
+  margin: 0 15px;
+  border-radius: 50%;
+  width: 50px;
+  object-fit: contain;
+}
+.logo_text {
+  text-transform: uppercase;
+  color: rgba(29, 60, 52);
+  line-height: 1.5;
+  font-size: 10px;
+  font-weight: 800;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40vw;
+  padding: 5px;
+}
+.navlink {
+  color: rgba(29, 60, 52);
+  font-weight: 800;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.donate {
+  margin: 0 60px;
+}
+.donate_btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: chocolate;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.menubar {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .header {
+    width: 100vw;
+  }
+  .logo_text {
+    line-height: 1.1;
+    font-size: 2px;
+  }
+  .menu {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    width: 100vw;
+    height: 30vh;
+    background-color: rgb(22, 69, 57);
+    border-bottom-left-radius: 40px;
+    padding: 20px;
+  }
+  .navlink {
+    color: white;
+  }
+  .menubar {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: black;
+    font-size: 21px;
+  }
+  .donate_btn {
+    font-size: 14px;
+  }
+}
+
+/* ================Donate form================= */
+#stripe-card {
+  position: absolute;
+  top: 50px;
+  right: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  #stripe-card {
+    position: absolute;
+    top: 55px;
+    right: 5px;
+  }
+}
+
+/* ================Hero================= */
+.hero_section {
+  display: flex;
+  background-color: whitesmoke;
+}
+.hero_container {
+  height: 70vh;
+  background-color: rgba(29, 60, 52);
+  width: 60vw;
+}
+.hero_heading {
+  font-size: 50px;
+  margin-top: 60px;
+}
+.hero_subtitle,
+.hero_heading {
+  color: white;
+  margin-left: 10px;
+}
+.hero_subtitle {
+  margin-top: 15px;
+  line-height: 1.8;
+  font-size: 18px;
+  width: 85%;
+}
+.hero_img img {
+  width: 50vw;
+  height: 70vh;
+}
+@media screen and (max-width: 800px) {
+  .hero_section {
+    flex-direction: column;
+  }
+  .hero_container {
+    height: 30vh;
+    width: 100vw;
+  }
+  .hero_heading {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .hero_subtitle,
+  .hero_heading {
+    margin-left: 20px;
+  }
+  .hero_subtitle {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .hero_img img {
+    width: 100vw;
+    height: 80%;
+  }
+}
+/* ================Section================= */
+.section_container {
+  background-color: whitesmoke;
+  padding: 20px 0;
+}
+.section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 50vh;
+  margin: 20px 60px;
+}
+.section_text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.section_topic {
+  color: rgba(29, 60, 52);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.section_heading {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+.section_desc {
+  width: 85%;
+}
+.section_image {
+  width: 500px;
+  height: 50vh;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+@media screen and (max-width: 800px) {
+  .section {
+    grid-template-columns: none;
+    grid-template-rows: 50% 50%;
+    height: 100vh;
+    margin: 0 15px;
+  }
+  .section_text {
+    width: 100vw;
+    height: 50vh;
+  }
+  .section_heading {
+    font-size: 22px;
+    width: 95vw;
+    line-height: 1.6;
+  }
+  .section_desc {
+    width: 90vw;
+  }
+  .section_image {
+    overflow: hidden;
+    width: 85vw;
+    height: 40vh;
+  }
+}
+/* ================About Us================= */
+.aboutus {
+  display: flex;
+  background-color: whitesmoke;
+  padding-top: 20px;
+  padding-left: 20px;
+  justify-content: space-around;
+}
+.aboutus_image {
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  width: 50vw;
+  height: 70vh;
+  object-fit: cover;
+}
+.aboutus_text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.aboutus_heading {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  .aboutus {
+    flex-direction: column;
+  }
+  .aboutus_image {
+    width: 85vw;
+    height: 50vh;
+  }
+  .aboutus_text {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+/* ================Number Stats================= */
+.numbers_stats {
+  height: 70vh;
+  padding-left: 70px;
+  background-color: rgba(29, 60, 52);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+.number_text,
+.numbers_stats_haeding {
+  color: white;
+}
+.numbers_stats_topic,
+.icon,
+.numbers {
+  color: rgba(194, 225, 137);
+}
+.numbers_stats_topic {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+.numbers_stats_haeding {
+  font-size: 40px;
+  font-weight: 700;
+}
+.number_stats_container {
+  display: flex;
+  gap: 18rem;
+  width: 100%;
+  padding-top: 30px;
+  text-align: center;
+}
+.icon {
+  font-size: 50px;
+}
+.numbers {
+  font-size: 50px;
+}
+@media screen and (max-width: 800px) {
+  .numbers_stats {
+    height: auto;
+    padding: 15px;
+  }
+  .numbers_stats_topic {
+    font-size: 10px;
+  }
+  .numbers_stats_haeding {
+    font-size: 22px;
+  }
+  .number_stats_container {
+    gap: 1rem;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .icon,
+  .numbers {
+    font-size: 8vw;
+  }
+}
+/* ================Contact Us================= */
+.contactus {
+  display: flex;
+  background-color: #9fe2a6;
+  padding: 30px;
+  align-items: center;
+  gap: 30px;
+}
+.contactus_img {
+  width: 30%;
+}
+.contactus_img img {
+  width: 80%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.contactus_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.contactus_heading {
+  color: rgba(29, 60, 52);
+  font-size: 30px;
+  font-weight: 800;
+}
+.contactus_form input {
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+}
+.contactus_form input::placeholder {
+  font-size: 15px;
+  color: grey;
+}
+.submit {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.submit p {
+  width: 70%;
+}
+.para {
+  font-size: 10px;
+}
+.submit_button {
+  text-align: right;
+  width: 40%;
+}
+.submit_button button {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+  color: rgba(29, 60, 52);
+  font-weight: 700;
+}
+.submit_button button:hover {
+  border-bottom: 2px solid rgba(29, 60, 52);
+}
+
+@media screen and (max-width: 800px) {
+  .contactus {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    align-items: center;
+  }
+  .contactus_img {
+    width: 35%;
+  }
+  .contactus_form input {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .submit {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .submit_button {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .submit_button button {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+    color: rgba(29, 60, 52);
+    font-weight: 700;
+  }
+  .submit_button button:hover {
+    border-bottom: 2px solid rgba(29, 60, 52);
+  }
+}
+

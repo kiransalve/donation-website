@@ -1,0 +1,11 @@
+.privacy_policy_container{
+    background-color: whitesmoke;
+}
+.privacy_policy{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 30px 60px;
+}
+.privacy_policy_details{
+    padding: 2vw 10vw;
+}

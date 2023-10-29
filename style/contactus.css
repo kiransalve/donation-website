@@ -1,0 +1,23 @@
+.contact_us_container {
+  display: flex;
+  background-color: whitesmoke;
+  padding: 20px;
+  align-items: center;
+  gap: 70px;
+}
+.contact_us_text,
+.contact_us_details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact_us_text p {
+  font-weight: 700;
+}
+
+.contact_us_text p:nth-child(2) {
+  font-size: 40px;
+}
+.contact_us_details {
+  margin-top: 30px;
+}

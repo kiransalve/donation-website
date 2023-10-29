@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trees</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+<body>
+    <!-- ================== Header ================= -->
+    <div class="header">
+        <div class="logo">
+            <img src="assets/img/logo.jpg" alt="logo" class="logo_img">
+            <div class="logo_text">trees<br>for<br>future</div>
+        </div>
+        <div class="menu">
+            <div class="navlink">
+                <a href="/index.html">Home</a>
+            </div>
+            <div class="navlink">
+                <a href="/pages/contactus.html">
+                    Contact us</a>
+            </div>
+            <div class="navlink">
+                <a href="/pages/privacyPolicy.html">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="donate">
+            <button class="donate_btn">Donate</button>
+        </div>
+
+    </div>
+    <div class="menubar" onclick="showMenuBar()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <!-- ================== Donate form ========== -->
+    <script async src="https://js.stripe.com/v3/buy-button.js">
+    </script>
+
+    <stripe-buy-button buy-button-id="buy_btn_1O5jTASH8hIJVJPZLhAnnYiY" id="stripe-card" style="display: none;"
+        publishable-key="pk_test_51JdzUpSH8hIJVJPZDpu9F2g0AgbZzESeFnulPoDzWxbLruBvfI7RpUWWVSkOaAstF1cpYV2auzmYttWnZYggevHQ009YKuttTM">
+        <!-- put your publishable-key -->
+    </stripe-buy-button>
+
+    <!-- ================== Hero ================= -->
+    <div class="hero_section">
+        <div class="hero_container">
+            <h1 class="hero_heading">Let's Get Planting</h1>
+            <p class="hero_subtitle">Break the cycle of hunger, poverty, and environmental destruction. With your help,
+                Trees for the Future
+                (TREES) restores
+                landscapes in developing communities.</p>
+        </div>
+        <div class="hero_img">
+            <img src="assets/img/image7.jpg" alt="hero">
+        </div>
+    </div>
+    <!-- ================== Section ================= -->
+    <div class="section_container">
+        <div class="section">
+            <div class="section_text">
+                <div class="section_topic">the problem</div>
+                <div class="section_heading">Hunger, poverty, and environmental decay</div>
+                <div class="section_desc">Around the world, landscapes are deteriorating and ecosystems are collapsing.
+                    The
+                    farming families that rely on the land
+                    to survive are trapped in cycles of hunger and poverty.</div>
+            </div>
+            <div class="section_img">
+                <img src="assets/img/image2.jpg" class="section_image"></img>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section_text">
+                <div class="section_topic">the cause</div>
+                <div class="section_heading">Unsustainable land use</div>
+                <div class="section_desc">
+                    Deforestation, soil degradation, and biodiversity loss are all tied to our global food system. In an
+                    effort to grow
+                    enough food to eat and sell, farmers are encouraged to clear their land of trees and native species.
+                    This unsustainable
+                    approach is harming people and the planet.
+                </div>
+            </div>
+            <div class="section_img">
+                <img src="assets/img/image3.jpg" class="section_image"></img>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section_text">
+                <div class="section_topic">THE FOREST GARDEN SOLUTION</div>
+                <div class="section_heading">Equipping farmers with tools and knowledge</div>
+                <div class="section_desc">
+                    There is no one-size-fits-all solution to the challenges we face. Tree planting alone will not solve
+                    hunger, poverty, or
+                    the climate crisis. By training farmers in the Forest Garden Approach, we provide families with the
+                    tools and training
+                    they need to ensure they can thrive on their land longterm.
+                </div>
+            </div>
+            <div class="section_img">
+                <img src="assets/img/image4.jpg" class="section_image"></img>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section_text">
+                <div class="section_topic">the key</div>
+                <div class="section_heading">
+                    Every Forest Garden is made possible by supporters like you</div>
+                <div class="section_desc">
+                    Farmers have the power, we have the training, you are the key. Through trees, tools, and training,
+                    we’ve been able to
+                    make a big impact… and it’s all thanks to our incredible supporter community.</div>
+            </div>
+            <div class="section_img">
+                <img src="assets/img/image5.jpg" class="section_image"></img>
+            </div>
+        </div>
+    </div>
+    <!-- ================== About Us ================= -->
+    <div class="aboutus">
+        <div class="aboutus_img">
+            <img src="assets/img/image6.jpg" alt="" class="aboutus_image">
+        </div>
+        <div class="aboutus_text">
+            <div class="aboutus_heading">About us</div>
+            <div class="aboutus_desc">TREES confronts hunger, poverty,
+                and environmental degradation by serving the people at the heart of our global food
+                systems: farmers and their families.</div>
+        </div>
+    </div>
+    <!-- ================== Numbers Stats ================= -->
+    <div class="numbers_stats">
+        <div class="numbers_stats_topic">by the numbers</div>
+        <div class="numbers_stats_haeding">Helping People & Planet</div>
+
+        <div class="number_stats_container">
+            <div class="numbers_statistics">
+                <div class="icon"><i class="fa-solid fa-tree"></i></div>
+                <div class="numbers">300,00,000</div>
+                <div class="number_text">Trees Planted</div>
+            </div>
+            <div class="numbers_statistics">
+                <div class="icon"><i class="fa-regular fa-image"></i></div>
+                <div class="numbers">92,998</div>
+                <div class="number_text">Acres Restored</div>
+            </div>
+            <div class="numbers_statistics">
+                <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+                <div class="numbers">332,000</div>
+                <div class="number_text">Lives Changed</div>
+            </div>
+        </div>
+    </div>
+    <!-- ================== Contact Input ================= -->
+    <div class="contactus">
+        <div class="contactus_img">
+            <img src="assets/img/logo_vector.png" alt="">
+        </div>
+        <div class="contactus_text">
+            <div class="contactus_heading">Add Impact to Your Inbox</div>
+            <p class="para">All fields required</p>
+            <!-- put your email instead of e5c40e1908ce0cc4d1d7fe2e82be2dcb in action-->
+            <form class="contactus_form" action="https://formsubmit.co/e5c40e1908ce0cc4d1d7fe2e82be2dcb" method="POST">
+                <input type="text" class="first_name" name="first_name" placeholder="First Name">
+                <input type="text" class="last_name" name="last_name" placeholder="Last Name">
+                <input type="email" class="email" name="email" placeholder="Email">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500//index.html">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="submit">
+                    <p class="para">Get our emails to stay in the know on what's happening in the field and ways you can
+                        get
+                        involved.
+                    </p>
+                    <div class="submit_button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
