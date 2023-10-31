@@ -22,11 +22,11 @@
                 <a href="/index.html">Home</a>
             </div>
             <div class="navlink">
-                <a href="/pages/contactus.html">
+                <a href="/contactus.html">
                     Contact us</a>
             </div>
             <div class="navlink">
-                <a href="/pages/privacyPolicy.html">Privacy Policy</a>
+                <a href="/privacyPolicy.html">Privacy Policy</a>
             </div>
         </div>
         <div class="donate">
@@ -37,28 +37,84 @@
     <div class="menubar" onclick="showMenuBar()">
         <i class="fa-solid fa-bars"></i>
     </div>
-    <!-- ================== Donate form ========== -->
-    <script async src="https://js.stripe.com/v3/buy-button.js">
-    </script>
+    
 
-    <stripe-buy-button buy-button-id="buy_btn_1O5jTASH8hIJVJPZLhAnnYiY" id="stripe-card" style="display: none;"
-        publishable-key="pk_test_51JdzUpSH8hIJVJPZDpu9F2g0AgbZzESeFnulPoDzWxbLruBvfI7RpUWWVSkOaAstF1cpYV2auzmYttWnZYggevHQ009YKuttTM">
-        <!-- put your publishable-key -->
-    </stripe-buy-button>
+    <!-- ================== FAQ ================= -->
+<div class="overlay">
+    
+    <div class="accordian">
+<h3 class="faq">FAQ</h3>
+<div class="cancel_icon">
+    <i class="fas fa-times"></i>
+</div>
 
-    <!-- ================== Hero ================= -->
-    <div class="hero_section">
-        <div class="hero_container">
-            <h1 class="hero_heading">Let's Get Planting</h1>
-            <p class="hero_subtitle">Break the cycle of hunger, poverty, and environmental destruction. With your help,
-                Trees for the Future
-                (TREES) restores
-                landscapes in developing communities.</p>
-        </div>
-        <div class="hero_img">
-            <img src="assets/img/image7.jpg" alt="hero">
+   <div class="accordian_container">
+        <div class="accordian_heading">Is this donation tax deductible?</div>
+        <div class="accordian_content">
+            Trees for the Future is a 501(c)3 tax-exempt organization and your donation is tax-deductible within the guidelines of U.S. law. To claim a donation as a deduction on your U.S. taxes, please keep your email donation receipt as your official record. We'll send it to you upon successful completion of your donation.
         </div>
     </div>
+    <div class="accordian_container">
+        <div class="accordian_heading">What is the difference between a recipient and an honoree?
+        </div>
+        <div class="accordian_content">
+            If you choose to dedicate your gift, you'll see fields for "donor", "honoree" and "recipient." "Donor" is the name of the person making the gift. "Honoree" is the person you are donating in honor of and their name will be included in your dedication message. "Recipient" is the person that is receiving the message. Most times, the honoree and recipient are the same person. However, memorial gifts, or gifts made in honor of a child or pet, are usually sent to a loved one.
+            
+        </div>
+    </div>
+    <div class="accordian_container">
+        <div class="accordian_heading">What does a dedication message look like?
+        </div>
+        <div class="accordian_content">
+            If you choose to dedicate your donation AND notify a recipient, the recipient will receive a message that says "DONOR NAME has donated in honor of HONOREE NAME for Trees for the Future" along with the message you choose to include. The donor (you) will receive a donation receipt that includes the honoree's name. If you'd like to receive a copy of the dedication message, you can email giving@trees.org with your name, email and gift date, or the donation id.
+        </div>
+    </div>
+    <div class="accordian_container">
+        <div class="accordian_heading">I'd prefer to donate through a check, where can I send it?
+        </div>
+        <div class="accordian_content">
+                You can make checks / money orders to:Trees for the Future, P.O. Box 7027, Silver Spring, MD 20907
+        </div>
+    </div>
+    <div class="accordian_container">
+        <div class="accordian_heading">I'd prefer to donate through ACH or wire transfer, how can I do that?
+        </div>
+        <div class="accordian_content">You can make a bank transfer through Stripe at the bottom of this page, or donate through your bank using our information below:
+<br>Bank Name: M&T Bank
+<br>Bank Address: One Fountain Plaza, Buffalo, NY 14203
+<br>Beneficiary Name: Trees for the Future
+<br>EIN: 52-1644869
+<br>Beneficiary Account #: 9871937828
+<br>Account Type: Checking
+<br>ABA/Routing #: 052000113
+SWIFT #: MANTUS33
+        </div>
+
+    </div>
+    <div class="donate faq_btn">
+        <button class="donate_btn">Donate</button>
+    </div>
+<!-- ================== Donate form ========== -->
+<script async src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button buy-button-id="buy_btn_1O5jTASH8hIJVJPZLhAnnYiY" id="stripe-card" style="display: none;"
+    publishable-key="pk_test_51JdzUpSH8hIJVJPZDpu9F2g0AgbZzESeFnulPoDzWxbLruBvfI7RpUWWVSkOaAstF1cpYV2auzmYttWnZYggevHQ009YKuttTM">
+    <!-- put your publishable-key -->
+</stripe-buy-button>
+</div>
+
+</div>
+    <!-- ================== Hero ================= -->
+    <div class="hero-section">
+        <div class="hero_text">
+            <div class="hero_heading">Let's Get Planting</div>
+            <div class="hero_desc">Break the cycle of hunger, poverty, and environmental destruction. With your help,
+                Trees for the Future (TREES) restores landscapes in developing communities.</div>
+        </div>
+            <img src="assets/img/image7.jpg" alt="" class="hero_image">
+    </div>
+    
     <!-- ================== Section ================= -->
     <div class="section_container">
         <div class="section">
@@ -70,10 +126,9 @@
                     farming families that rely on the land
                     to survive are trapped in cycles of hunger and poverty.</div>
             </div>
-            <div class="section_img">
-                <img src="assets/img/image2.jpg" class="section_image"></img>
-            </div>
+                <img src="assets/img/image7.jpg" class="section_image"></img>
         </div>
+
         <div class="section">
             <div class="section_text">
                 <div class="section_topic">the cause</div>
@@ -101,11 +156,11 @@
                     tools and training
                     they need to ensure they can thrive on their land longterm.
                 </div>
+            </div>  
+            <div class="section_image_container">
+                <img src="assets/img/image7.jpg" class="section_image"></img>
+            </div>      
             </div>
-            <div class="section_img">
-                <img src="assets/img/image4.jpg" class="section_image"></img>
-            </div>
-        </div>
         <div class="section">
             <div class="section_text">
                 <div class="section_topic">the key</div>
@@ -117,7 +172,7 @@
                     make a big impact… and it’s all thanks to our incredible supporter community.</div>
             </div>
             <div class="section_img">
-                <img src="assets/img/image5.jpg" class="section_image"></img>
+                <img src="assets/img/image7.jpg" class="section_image"></img>
             </div>
         </div>
     </div>

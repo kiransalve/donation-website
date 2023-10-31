@@ -21,3 +21,9 @@
 .contact_us_details {
   margin-top: 30px;
 }
+
+@media (max-width: 600px) {
+  .contact_us_container {
+    flex-direction: column;
+  }
+}
