@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/contactus.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+
+  <body>
+    <!-- ================== Header ================= -->
+    <div class="header">
+      <div class="logo">
+        <img src="assets/img/logo.jpg" alt="logo" class="logo_img" />
+        <div class="logo_text">trees<br />for<br />future</div>
+      </div>
+      <div class="menu">
+        <div class="navlink">
+          <a href="/index.html">Home</a>
+        </div>
+        <div class="navlink">
+          <a href="/contactus.html"> Contact us</a>
+        </div>
+        <div class="navlink">
+          <a href="/privacyPolicy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="donate">
+        <button class="donate_btn">Donate</button>
+      </div>
+    </div>
+    <div class="menubar" onclick="showMenuBar()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- ================== FAQ ================= -->
+    <div class="overlay">
+      <div class="accordian">
+        <h3 class="faq">FAQ</h3>
+        <div class="cancel_icon">
+          <i class="fas fa-times"></i>
+        </div>
+
+        <div class="accordian_container">
+          <div class="accordian_heading">Is this donation tax deductible?</div>
+          <div class="accordian_content">
+            Trees for the Future is a 501(c)3 tax-exempt organization and your
+            donation is tax-deductible within the guidelines of U.S. law. To
+            claim a donation as a deduction on your U.S. taxes, please keep your
+            email donation receipt as your official record. We'll send it to you
+            upon successful completion of your donation.
+          </div>
+        </div>
+        <div class="accordian_container">
+          <div class="accordian_heading">
+            What is the difference between a recipient and an honoree?
+          </div>
+          <div class="accordian_content">
+            If you choose to dedicate your gift, you'll see fields for "donor",
+            "honoree" and "recipient." "Donor" is the name of the person making
+            the gift. "Honoree" is the person you are donating in honor of and
+            their name will be included in your dedication message. "Recipient"
+            is the person that is receiving the message. Most times, the honoree
+            and recipient are the same person. However, memorial gifts, or gifts
+            made in honor of a child or pet, are usually sent to a loved one.
+          </div>
+        </div>
+        <div class="accordian_container">
+          <div class="accordian_heading">
+            What does a dedication message look like?
+          </div>
+          <div class="accordian_content">
+            If you choose to dedicate your donation AND notify a recipient, the
+            recipient will receive a message that says "DONOR NAME has donated
+            in honor of HONOREE NAME for Trees for the Future" along with the
+            message you choose to include. The donor (you) will receive a
+            donation receipt that includes the honoree's name. If you'd like to
+            receive a copy of the dedication message, you can email
+            giving@trees.org with your name, email and gift date, or the
+            donation id.
+          </div>
+        </div>
+        <div class="accordian_container">
+          <div class="accordian_heading">
+            I'd prefer to donate through a check, where can I send it?
+          </div>
+          <div class="accordian_content">
+            You can make checks / money orders to:Trees for the Future, P.O. Box
+            7027, Silver Spring, MD 20907
+          </div>
+        </div>
+        <div class="accordian_container">
+          <div class="accordian_heading">
+            I'd prefer to donate through ACH or wire transfer, how can I do
+            that?
+          </div>
+          <div class="accordian_content">
+            You can make a bank transfer through Stripe at the bottom of this
+            page, or donate through your bank using our information below:
+            <br />Bank Name: M&T Bank <br />Bank Address: One Fountain Plaza,
+            Buffalo, NY 14203 <br />Beneficiary Name: Trees for the Future
+            <br />EIN: 52-1644869 <br />Beneficiary Account #: 9871937828
+            <br />Account Type: Checking <br />ABA/Routing #: 052000113 SWIFT #:
+            MANTUS33
+          </div>
+        </div>
+        <div class="donate faq_btn">
+          <button class="donate_btn">Donate</button>
+        </div>
+        <!-- ================== Donate form ========== -->
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
+        <stripe-buy-button
+          buy-button-id="buy_btn_1O5jTASH8hIJVJPZLhAnnYiY"
+          id="stripe-card"
+          style="display: none"
+          publishable-key="pk_test_51JdzUpSH8hIJVJPZDpu9F2g0AgbZzESeFnulPoDzWxbLruBvfI7RpUWWVSkOaAstF1cpYV2auzmYttWnZYggevHQ009YKuttTM"
+        >
+          <!-- put your publishable-key -->
+        </stripe-buy-button>
+      </div>
+    </div>
+
+    <div class="contact_us_container">
+      <div class="contact_us_text">
+        <p>Get in Touch</p>
+        <p>Contact Us</p>
+        <p>Please reach out with any questions you may have.</p>
+      </div>
+      <div class="contact_us_details">
+        <p><b>Phone:</b> (+1) 301-565-0630</p>
+        <p>
+          <b>Address:</b> 10770 Columbia Pike Suite 300, Silver Spring, MD,
+          20901
+        </p>
+        <p><b> General Inquiries:</b> info@trees.org</p>
+        <p><b> Corporate Partnership Inquiries: </b>partnerships@trees.org</p>
+        <p><b>Donor Inquiries: </b>giving@trees.org</p>
+        <p><b>Field Partnership Inquiries: </b>training@trees.org</p>
+        <p><b>Media Inquiries: </b>media@trees.org</p>
+      </div>
+    </div>
+    <div class="contactus">
+      <div class="contactus_img">
+        <img src="/assets/img/logo_vector.png" alt="" />
+      </div>
+      <div class="contactus_text">
+        <div class="contactus_heading">Add Impact to Your Inbox</div>
+        <p class="para">All fields required</p>
+        <!-- put your email instead of e5c40e1908ce0cc4d1d7fe2e82be2dcb in action-->
+        <form
+          class="contactus_form"
+          action="https://formsubmit.co/e5c40e1908ce0cc4d1d7fe2e82be2dcb"
+          method="POST"
+        >
+          <input
+            type="text"
+            class="first_name"
+            name="first_name"
+            placeholder="First Name"
+          />
+          <input
+            type="text"
+            class="last_name"
+            name="last_name"
+            placeholder="Last Name"
+          />
+          <input type="email" class="email" name="email" placeholder="Email" />
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500//index.html"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <div class="submit">
+            <p class="para">
+              Get our emails to stay in the know on what's happening in the
+              field and ways you can get involved.
+            </p>
+            <div class="submit_button">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="/script/script.js"></script>
+</html>

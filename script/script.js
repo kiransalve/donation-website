@@ -1,33 +1,9 @@
-// show donate button
-document.addEventListener("DOMContentLoaded", function () {
-  const donateButton = document.querySelector(".donate_btn");
-  const stripeForm = document.querySelector("#stripe-card");
-  donateButton.addEventListener("click", function () {
-    if (stripeForm.style.display === "none") {
-      stripeForm.style.display = "block";
-    } else {
-      stripeForm.style.display = "none";
-    }
-  });
-});
-// show menu bar for mobile device
-const showMenuBar = () => {
-  const menuBar = document.querySelector(".menubar");
-  const menu = document.querySelector(".menu");
-  menuBar.addEventListener("click", function () {
-    if (menu.style.display === "none") {
-      menu.style.display = "flex";
-    } else {
-      menu.style.display = "none";
-    }
-  });
-};
 // number counter animation
 
 // Function to animate counting numbers
 function animateNumberCounter(counter, target) {
   const duration = 2000; // Duration in milliseconds
-  const step = Math.ceil(target / (duration / 10)); // Calculate the step size
+  const step = Math.ceil(target / (duration / 10));
 
   let current = 0;
 
@@ -35,10 +11,10 @@ function animateNumberCounter(counter, target) {
     current += step;
 
     if (current < target) {
-      counter.innerText = current.toLocaleString(); // Add commas back to the displayed number
+      counter.innerText = current.toLocaleString();
       requestAnimationFrame(updateCounter);
     } else {
-      counter.innerText = target.toLocaleString(); // Ensure the final number is formatted with commas
+      counter.innerText = target.toLocaleString(); //
     }
   };
 
@@ -66,3 +42,54 @@ const observer = new IntersectionObserver(startAnimationWhenVisible, {
 document.querySelectorAll(".numbers_statistics").forEach((element) => {
   observer.observe(element);
 });
+
+// Accordian
+let accordian = document.querySelectorAll(".accordian .accordian_container");
+
+accordian.forEach((acco) => {
+  acco.onclick = () => {
+    if (acco.classList.contains("active")) {
+      acco.classList.remove("active");
+    } else {
+      accordian.forEach((subAcco) => {
+        subAcco.classList.remove("active");
+      });
+      acco.classList.add("active");
+    }
+  };
+});
+
+let overlay = document.querySelector(".overlay");
+let cancel_icon = document.querySelector(".cancel_icon");
+// show donate button
+document.addEventListener("DOMContentLoaded", function () {
+  const donateButton = document.querySelector(".donate_btn");
+  const stripeForm = document.querySelector("#stripe-card");
+  donateButton.addEventListener("click", function () {
+    overlay.style.display = "block";
+  });
+  cancel_icon.addEventListener("click", function () {
+    overlay.style.display = "none";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const donateButton = document.querySelector(".faq_btn");
+  const stripeForm = document.querySelector("#stripe-card");
+  donateButton.addEventListener("click", function () {
+    stripeForm.style.display = "block";
+  });
+});
+
+// show menu bar for mobile device
+const showMenuBar = () => {
+  const menuBar = document.querySelector(".menubar");
+  const menu = document.querySelector(".menu");
+  menuBar.addEventListener("click", function () {
+    if (menu.style.display === "none") {
+      menu.style.display = "flex";
+    } else {
+      menu.style.display = "none";
+    }
+  });
+};
